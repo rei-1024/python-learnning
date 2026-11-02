@@ -35,3 +35,10 @@ print(a_list)
 #从大到小排序
 a_list.sort(reverse = True)
 print(a_list)
+
+#多维列表
+multi_dim_a = [[1,2,3],
+               [2,3,4],
+               [5,6,7]]
+
+print(multi_dim_a[0][1])
