@@ -23,12 +23,13 @@ g = e * f
 #矩阵相乘
 g_dot = np.dot(e,f)
 g_dot2 = e.dot(f)
+g_dot = e @ f
 print(g_dot)
 print(g_dot2)
 
 #0到1随机数字，括号里参数是shape
 h = np.random.random((2,4))
-#axis=0在列数做运算 axis=1在行数做运算
-print(np.sum(h),axis=1)
+#axis=0在行数做运算 axis=1在列数做运算
+print(np.sum(h,axis=0))
 print(np.max(h))
 print(np.min(h))
